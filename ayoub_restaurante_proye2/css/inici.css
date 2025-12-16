@@ -1,0 +1,296 @@
+/* portada */
+.portada{ 
+  position: relative; 
+  overflow:hidden; 
+}
+.portada img{ 
+  display:block; 
+  width:100%; 
+  height:auto; 
+}
+.portada h1{
+  position:absolute;
+  top:30%;
+  left:50%;
+  transform: translateX(-50%);
+  width:60%;
+  text-align:center;
+  color:var(--amarillito);
+  font-size:2.6rem;
+  margin:0;
+  line-height:1.1;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+
+/* contendor 50/50 */
+.contenedor{ 
+  text-align:center;
+  font-size:0; 
+} /* tuve que eliminar los espacios con font-size */
+.izquierda, .derecha{
+  display:inline-block;
+  width:50%;
+  vertical-align:top;
+  font-size:initial; 
+  height:500px; 
+  position:relative;
+}
+.izquierda{ 
+  background:var(--rojito);
+  color:var(--amarillito);
+}
+
+.derecha{ 
+  background:var(--amarillito); 
+  color:var(--rojito); 
+}
+
+.derecha img{ 
+  width:100%; 
+  height:100%; 
+  object-fit:cover; 
+}
+
+/* contenido antes de la img */
+.contenido_izq{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  padding:12px;
+}
+#titol-portada{
+  display: inline-block;
+  width: 50%;
+}
+
+
+
+/* boton subtitulo */
+#subtitulo{
+  display:inline-block; 
+  max-width:600px; 
+  font-family: serif; 
+}
+#boton{ 
+  display:inline-block; 
+  background:var(--amarillito); 
+  color:var(--rojito); padding:6px 14px; 
+  border-radius:20px; font-weight:700; 
+  margin-top:8px; 
+}
+
+/* carat  */
+.carta{
+   background:var(--amarillito); 
+   padding:60px 20px; text-align:center; 
+   color:var(--rojito); 
+}
+.carta_element{
+  display:inline-block;
+  width:28%;
+  min-width:220px;
+  vertical-align:top;
+  margin:14px 8px;
+  background:transparent;
+}
+.carta_element img{ 
+  border-radius:12px; 
+  display:block; 
+}
+.carta_element h5{ 
+  margin:12px 0 6px; 
+  font-style:italic; 
+  font-size:1.2rem; 
+}
+.carta_element p{ 
+  font-family:serif;
+  margin:0; 
+}
+.carta_element span{ 
+  display:block; 
+  font-size:1.8rem; 
+  font-weight:bold;
+  margin-top:8px; 
+}
+.carta_element a{ 
+  display:inline-block; 
+  margin-top:8px; 
+  padding:8px 14px; 
+  border-radius:10px; 
+  background:var(--rojito); 
+  color:var(--amarillito); 
+  font-weight:700; 
+}
+
+/* contacto */
+.contacto{ 
+  background:var(--blanco); 
+  padding:36px 20px; 
+  text-align:center; 
+  
+}
+.borde_contacto{
+  background-color: var(--amarillito);
+  position: relative;
+  bottom: 180px;
+  padding: 20px 20px;
+  border-radius: 20px;
+  
+}
+
+.borde_horario{
+  background-color: var(--amarillito);
+  position: relative;
+  top: 20px;
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+
+
+
+.contacto img {
+  display: inline-block;
+  width: 40%;       
+  vertical-align: top; 
+  margin-right: 20px;  
+  border-radius: 10px;
+}
+
+.contacto .info {
+  display: inline-block;
+  width: 50%;       
+  position: relative;
+  left: 100px;
+  font-size: 17px;
+  vertical-align: top;
+  text-align: left; 
+  
+}
+.contacto h1{ 
+  color:var(--rojito); 
+  font-size:3rem; 
+  margin:20px 0; 
+}
+.contacto .info article{ 
+  color:var(--rojito); 
+  margin-top:6px;
+  display: inline-block; 
+  margin-right: 120px;
+  
+}
+.contacto .info p{
+  margin-bottom: 30px;
+}
+
+.contacto span{
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+/* movil */
+@media (max-width:600px){
+  .portada h1{ 
+    font-size:1.6rem; 
+    top:40%; 
+    width:80%; 
+  }
+  .izquierda, .derecha{ 
+    display:block; 
+    width:100%; 
+    height:350px; 
+  }
+  .contenedor{ 
+    font-size:initial; 
+  }
+  .carta_element{ 
+    display:block; 
+    width:100%; 
+    min-width:0; 
+    margin-bottom:20px; 
+  }
+  .contacto img{ 
+    width:80%; 
+  }
+  .pedir{ 
+    position:static; 
+    display:inline-block; 
+    margin-top:8px; 
+    float:none; 
+    right:auto; 
+  }
+  .info{ 
+    display:block; 
+    width:100%; 
+    margin-top: 200px;
+    text-align: center;
+    position: relative;
+    margin-right: 500%; 
+    height:950px; 
+  }
+  .footer_caja >:not(img){
+    height: 100px;
+    display: inline-block;
+    
+    margin-top:20px;
+    
+  }
+
+  
+   
+ 
+  
+}
+
+/* Tablet*/
+@media (min-width:601px) and (max-width:1517px){
+  .portada h1{ 
+    font-size:2.2rem; 
+    width:70%; 
+  }
+  .izquierda, .derecha{ 
+    display:block; 
+    width:100%; 
+    height:450px; 
+  }
+  .carta_element{ 
+    width:45%; 
+  }
+  .contacto img{ 
+    width:50%; 
+  }
+  .izquierda, .derecha{ 
+    display:block; 
+    width:100%; 
+    height:450px; 
+  }
+  .info{ 
+    display:block; 
+    width:100%; 
+    margin-top: 200px;
+    text-align: center;
+    position: relative;
+    margin-right: 10%; 
+    height:950px; 
+  }
+  .footer_caja{
+      text-align: center;
+  }
+
+}
+
+/* PC*/
+@media (min-width:1025px){
+  .portada h1{ 
+    font-size:3rem; 
+  }
+  .carta{ 
+    padding:80px 20px; 
+  }
+
+  
+  
+}
