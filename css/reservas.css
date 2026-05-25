@@ -1,0 +1,72 @@
+#reservas{
+    display: none;
+    background-color: var(--rojito);
+    min-height: 90vh;
+    padding: 40px 20px;
+}
+
+.titulo_reservas{
+    text-align: center;
+    color: var(--amarillito);
+}
+
+#formReserva{
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--amarillito);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.campo{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label{
+    color: var(--rojito);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#formReserva input[type=text],
+#formReserva input[type=date],
+#formReserva input[type=time],
+#formReserva input[type=number]{
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+.radios{
+    flex-direction: row;
+    gap: 20px;
+}
+
+.radios label{
+    color: var(--rojito);
+}
+
+#btnEnviar{
+    background-color: var(--rojito);
+    color: var(--amarillito);
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#confirmacion{
+    margin-top: 20px;
+    color: var(--rojito);
+}
+
+#confirmacion h2{
+    color: green;
+    text-align: center;
+}

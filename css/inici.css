@@ -24,7 +24,7 @@
 
 /* contendor 50/50 */
 .contenedor{ 
-  text-align:center;
+  text-align:center; 
   font-size:0; 
 } /* tuve que eliminar los espacios con font-size */
 .izquierda, .derecha{
@@ -129,25 +129,7 @@
   background:var(--blanco); 
   padding:36px 20px; 
   text-align:center; 
-  
 }
-.borde_contacto{
-  background-color: var(--amarillito);
-  position: relative;
-  bottom: 180px;
-  padding: 20px 20px;
-  border-radius: 20px;
-  
-}
-
-.borde_horario{
-  background-color: var(--amarillito);
-  position: relative;
-  top: 20px;
-  padding: 20px 20px;
-  border-radius: 20px;
-}
-
 
 
 .contacto img {
@@ -166,27 +148,15 @@
   font-size: 17px;
   vertical-align: top;
   text-align: left; 
-  
 }
 .contacto h1{ 
   color:var(--rojito); 
-  font-size:3rem; 
-  margin:20px 0; 
+  font-size:2rem; 
+  margin:10px 0; 
 }
-.contacto .info article{ 
+.contacto .info{ 
   color:var(--rojito); 
-  margin-top:6px;
-  display: inline-block; 
-  margin-right: 120px;
-  
-}
-.contacto .info p{
-  margin-bottom: 30px;
-}
-
-.contacto span{
-  font-weight: bold;
-  font-style: italic;
+  margin-top:6px; 
 }
 
 
@@ -222,31 +192,10 @@
     float:none; 
     right:auto; 
   }
-  .info{ 
-    display:block; 
-    width:100%; 
-    margin-top: 200px;
-    text-align: center;
-    position: relative;
-    margin-right: 500%; 
-    height:950px; 
-  }
-  .footer_caja >:not(img){
-    height: 100px;
-    display: inline-block;
-    
-    margin-top:20px;
-    
-  }
-
-  
-   
- 
-  
 }
 
 /* Tablet*/
-@media (min-width:601px) and (max-width:1517px){
+@media (min-width:601px) and (max-width:1024px){
   .portada h1{ 
     font-size:2.2rem; 
     width:70%; 
@@ -262,24 +211,6 @@
   .contacto img{ 
     width:50%; 
   }
-  .izquierda, .derecha{ 
-    display:block; 
-    width:100%; 
-    height:450px; 
-  }
-  .info{ 
-    display:block; 
-    width:100%; 
-    margin-top: 200px;
-    text-align: center;
-    position: relative;
-    margin-right: 10%; 
-    height:950px; 
-  }
-  .footer_caja{
-      text-align: center;
-  }
-
 }
 
 /* PC*/
@@ -290,7 +221,4 @@
   .carta{ 
     padding:80px 20px; 
   }
-
-  
-  
 }
